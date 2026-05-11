@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: linear-gradient(to right, #F7D02C 60%, #F5E9C8 40%);
+    height: 100vh;display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;}
+.container {
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;padding: 20px 0;}
+.logo {
+    width: 150px;}
+.menu span {
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #000000;
+    margin: 5px 0;}
+main {
+    display: flex;
+    height: 80%;
+    align-items: center;}
+.left {
+    flex: 1.2;
+    padding-right: 50px;}
+.title {
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin-bottom: 30px;}
+h1 {
+    font-size: 100px;
+    line-height: 1;
+    margin-bottom: 30px;
+    font-weight: 900;}
+.description {
+    max-width: 400px;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #252424;}
+.right {
+    flex: 0.8;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.character{
+    width: 120%;
+    z-index: 10;
+    transform: translateX(-15%);}
+.dots {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;}
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #D1B87D;
+    border-radius: 50%;}
+.dot.active {
+    background: #000;
+    transform: scale(1.4);}
+.lowertext {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;}
+.line {
+    width: 40px;
+    height: 2px;
+    background: #000;}
